@@ -141,10 +141,10 @@ function Navbar() {
           <div style={{ ...styles.dropdownContent, ...(dropdownOpen ? styles.dropdownOpen : {}) }}>
             <a href="./tenth" style={styles.dropdownContentLink}>Class 10</a>
             <a href="./twelth" style={styles.dropdownContentLink}>Class 12</a>
-            <a href="#college" style={styles.dropdownContentLink}>College</a>
+            <a href="./domain" style={styles.dropdownContentLink}>College</a>
           </div>
         </div>
-        <a href="#mentorship" style={styles.navLink}>Mentorship</a>
+        <a href="/mentorship" style={styles.navLink}>Mentorship</a>
         <a href="./blog" style={styles.navLink}>Blog</a>
       </div>
       <div style={styles.navbarRight}>

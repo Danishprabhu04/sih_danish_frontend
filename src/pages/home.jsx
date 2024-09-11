@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import CollapsibleExample from '../navbar'; // Import CollapsibleExample component
+import CollapsibleExample from '../components/navbar'; // Import CollapsibleExample component
 import Chatbot from './chatbot'; // Import Chatbot component
 
 // Define global styles

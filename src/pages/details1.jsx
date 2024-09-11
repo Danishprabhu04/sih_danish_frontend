@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel, Modal, Button } from 'react-bootstrap';
-import Navbar from '../navbar';
+import Navbar from '../components/navbar';
 
 const VideoCarousel = () => {
   const [showModal, setShowModal] = useState(false);
