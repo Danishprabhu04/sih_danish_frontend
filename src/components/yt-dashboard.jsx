@@ -59,21 +59,25 @@ const YouTubeCarousel = () => {
           {videos.map((video) => (
             <Carousel.Item key={video.id}>
               <Card>
-                <Card.Img
-                  variant="top"
-                  src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`} // Thumbnail URL
-                  alt={video.title}
-                  style={{ height: '400px', objectFit: 'cover' }}
-                />
+                <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                    }}
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  ></iframe>
+                </div>
                 <Card.Body>
                   <Card.Title>{video.title}</Card.Title>
                   <Card.Text>{video.channel}</Card.Text>
-                  <Button
-                    variant="danger"
-                    onClick={() => window.open(`https://www.youtube.com/watch?v=${video.id}`, '_blank', 'noopener,noreferrer')}
-                  >
-                    Watch on YouTube
-                  </Button>
                 </Card.Body>
               </Card>
             </Carousel.Item>
